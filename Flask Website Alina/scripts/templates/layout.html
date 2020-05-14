@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+</head>
+<body class="bg-gradient">
+ <nav class="navbar navbar-dark navbar-expand-sm bg-green fixed-top">
+
+  <a href="{{ url_for('home_page') }}" class="navbar-brand nav-brand-text">Sklep Zielarski EL</a>
+
+  <ul class="navbar-nav ml-auto">
+   <li class="nav-item nav-item-text"><a href="{{ url_for('products_page') }}" class="nav-link">Produkty</a></li>
+
+   <li class="nav-item dropdown nav-item-text">
+    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+     Bioenergoterapia
+    </a>
+    <div class="dropdown-menu">
+     <a class="dropdown-item" href="{{ url_for('healing_page') }}">Uzdrawianie</a>
+     <a class="dropdown-item" href="{{ url_for('theta_page') }}">Theta Healing</a>
+     <a class="dropdown-item" href="{{ url_for('candle_page') }}">Konchowanie uszu</a>
+    </div>
+   </li>
+
+   <li class="nav-item nav-item-text"><a href="{{ url_for('contact_page') }}" class="nav-link">KONTAKT</a></li>
+  </ul>
+ </nav>
+
+ <div class="bod-marg">
+
+ {% block content %}{% endblock content %}
+
+ </div>
+
+ <footer>
+  <div class="bg-gray footer-settings">
+    <div class="footer-firstrow">
+     <a class="font-white" href="https://www.google.com/maps/place/El.+Sklep+zielarsko+-+medyczny/data=!3m1!4b1!4m2!3m1!1s0x47015d99c0dd96b9:0xb5b9c308589e82e5" target="_blank">
+      Adres  <i class="fas fa-home"></i>
+     </a>
+    </div>
+    <div class="footer-firstrow">Telefon <i class="fas fa-phone"></i></div>
+    <div class="footer-firstrow">
+     <a class="font-white" href="https://www.youtube.com/channel/UCV6zYvnW7qVh6RHbm_GbnKA" target="_blank">
+      YouTube <i class="fab fa-youtube"></i>
+     </a>
+    </div>
+    <div class="footer-secondrow">Wałcz ul. Kilińszczaków 37</div>
+    <div class="footer-secondrow">0 67 387 31 24</div>
+    <div class="footer-secondrow">Alina Selwat</div>
+  </div>
+ </footer>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div>
+    <img src="{{ url_for('static', filename='images/herbs4.jpg') }}"
+         class="homepage-foto">
+    <img src="{{ url_for('static', filename='images/green button.png') }}"
+         class="homepage-text-bg">
+    <a href="http://127.0.0.1:5000/kontakt">
+    <div class="homepage-text">
+        <p style="font-size: 3em; padding-bottom: 1em;">
+            SKLEP ZIELARSKI EL
+        </p>
+        <p style="font-size: 2em;">
+            Zioła i Preparaty oraz Bioenergoterapia
+        </p>
+    </div>
+    </a>
+</div>
+
+{% endblock content %}

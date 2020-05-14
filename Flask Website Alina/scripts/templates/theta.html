@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="template-section">
+    <div class="template-text">
+        <h2>
+            Theta Healing
+        </h2>
+        <br>
+        <h5>
+            Theta Healing to najbardziej dynamicznie rozwijająca się metoda będąca
+            systemem rozwoju duchowego, emocjonalnego i mentalnego. To system pozwalający
+            na osiągnięcie całkowitego uzdrowienia w każdym aspekcie naszego życia – fizycznym,
+            finansowym, relacyjnym, zawodowym.
+        </h5>
+        <br>
+        <h5>
+            Na przedstawionej obok ilustracji znajdują się okładki książek autorstwa
+            Vianny Stibal, która jest twórczynią tej metody.
+        </h5>
+        <br>
+        <h5>
+            Jeśli Cię ona zainteresowała i czujesz, że będzie ona odpowiednia dla Ciebie,
+            skontaktuj się ze nami by uzyskać szczegółowe informacje na temat tej metody.
+            Dane kontaktowe znajdziesz w zakładce KONTAKT.
+        </h5>
+    </div>
+    <div>
+        <img src="{{url_for('static', filename='images/theta healing cover32.jpg') }}"
+         alt="theta healing obrazek" class="template-image">
+    </div>
+</div>
+
+{% endblock content %}

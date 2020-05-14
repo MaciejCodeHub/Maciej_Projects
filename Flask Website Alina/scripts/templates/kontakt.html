@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="template-contact">
+    <div>
+        <h5 class="template-contact-text">
+            Nasza placówka znajduje się przy ulicy Kilińszczaków 37 w Wałczu. Do sklepu
+            można wejść głównym wejściem przez bramę, a także przez parking od strony
+            ulicy Tęczowej.
+        </h5>
+    </div>
+    <div>
+        <h5 class="template-contact-text">
+            Jeśli chcesz się z nami skontaktować zadzwoń pod numer telefonu 0 67 387 31 24.
+            Postaramy się odpowiedzieć na Twoje pytania związane z naszą działalnością.
+        </h5>
+    </div>
+    <div>
+        <h5 class="template-contact-text">
+            Zapraszamy do zapoznania się z filmami zamieszczonymi na naszym kanale
+            YouTube o nazwie "Alina Selwat" do którego link został zamieszczony poniżej.
+        </h5>
+    </div>
+</div>
+<br>
+<div class="template-contact">
+    <div>
+        <img src="{{url_for('static', filename='images/foto sklepu.png') }}"
+             class="template-contact-graphics" alt="zdjęcie naszego sklepu">
+    </div>
+    <div>
+        <img src="{{url_for('static', filename='images/telefon.jpg') }}"
+         class="template-contact-graphics" alt="zdjęcie telefonu">
+    </div>
+    <div>
+        <iframe src="https://www.youtube.com/embed/-qwIOmw-E1o"
+                class="template-contact-graphics" ></iframe>
+    </div>
+</div>
+
+
+{% endblock content %}
