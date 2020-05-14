@@ -1,0 +1,32 @@
+Player Name: Basia
+Money: 0
+Boleñ
+0
+0
+Brzana
+73
+9.91
+Karp
+0
+0
+Kleñ
+46
+2.77
+Lin
+64
+5.33
+Lipieñ
+0
+0
+Okoñ
+43
+2.7
+Sum
+157
+71.9
+Szczupak
+0
+0
+Troæ
+100
+24.57
