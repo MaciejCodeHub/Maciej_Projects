@@ -11,7 +11,7 @@ from kivy.uix.button import Button
 from kivy.uix.togglebutton import ToggleButton
 from kivy.uix.dropdown import DropDown
 
-# Połączenie z bazą danych SQLite
+# Połączenie z bazą danych SQLite 
 conn = sqlite3.connect('calendar_app_db.db')
 c = conn.cursor()
 
